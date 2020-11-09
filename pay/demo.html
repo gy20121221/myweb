@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--佩适屏幕-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /><!--配适浏览器-->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../fa/css/all.css"><!--引用图标字体-->
+    <link rel="stylesheet" href="demo.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<form action="http://localhost:8080/Pay" id="pay">
+    <div class="sum">
+        <label>
+            <input type="text" name="sum" value="0.00">
+        </label>
+    </div>
+    <div class="pay-type">
+        <h1>支付方式</h1>
+        <label>
+            <p>微信</p>
+            <i class="fab fa-weixin"></i>
+            <input type="radio" checked="checked" name="pay" value="Weixin" />
+        </label>
+        <br>
+        <label>
+            <p>支付宝</p>
+            <i class="fab fa-alipay"></i>
+            <input type="radio" name="pay" value="Alipay" />
+        </label>
+        <br>
+    </div>
+    <div class="button">
+        <input type="submit" name="submit" value="立即支付" />
+    </div>
+</form>
+</body>
+</html>
